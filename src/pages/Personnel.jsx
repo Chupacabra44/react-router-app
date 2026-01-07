@@ -1,7 +1,9 @@
 import { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const Personnel = () => {
   const [people, setPeople] = useState([]);
+  const navigate = useNavigate();
 
   const getPeople = () => {
     fetch("https://jsonplaceholder.typicode.com/users")
@@ -24,6 +26,9 @@ const Personnel = () => {
             <div className="personnelCard" key={id}>
               <p>{name}</p>
               <p>{address.city}</p>
+              <button onClick={() => navigate(`/personnel/${id}`)}>
+                Detail
+              </button>
             </div>
           );
         })}
