@@ -18,7 +18,7 @@ const Contact = () => {
   return (
     <div className="contactWrapper">
       <h1>Contact</h1>
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit} className="formWrapper">
         <div className="infoWrapper">
           <label htmlFor="firstName">Name:</label>
           <input

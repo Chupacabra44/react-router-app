@@ -49,3 +49,71 @@
 .card img {
   width: 15rem;
 }
+
+.contactWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  height: calc(100vh - 182px);
+}
+
+.formWrapper {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.infoWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.errorWrapper {
+  text-align: center;
+}
+
+.errorWrapper img {
+  width: 30rem;
+}
+
+.footerWrapper {
+  border-top: 1px solid grey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  margin-top: 32px;
+}
+
+.navWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 32px;
+  margin-bottom: 32px;
+  padding-top: 10px;
+}
+
+.navigasyonWrapper {
+  width: 50%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.logo {
+  width: 75px;
+}
+@media screen and (max-width: 768px) {
+  .logo {
+    display: none;
+  }
+
+  .navigasyonWrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
