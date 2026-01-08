@@ -28,7 +28,7 @@ const PersonnelDetail = () => {
       <p>{person.address?.city}</p>
       <div className="btnWrapper">
         <button onClick={() => navigate("/")}>Home</button>
-        <button onClick={() => navigate(`/personnel/${id}`)}>Go Back</button>
+        <button onClick={() => navigate("/personnel")}>Go Back</button>
       </div>
     </div>
   );
