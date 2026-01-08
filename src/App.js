@@ -10,6 +10,8 @@ import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 import Paths from "./pages/Paths";
 import Frontend from "./components/Frontend";
 import Backend from "./components/Backend";
+import PrivateRouter from "./pages/PrivateRouter";
+import Login from "./pages/Login";
 
 const App = () => {
   return (
@@ -19,7 +21,10 @@ const App = () => {
         <Route path="/" element={<Home />} />
         <Route path="/personnel" element={<Personnel />} />
         <Route path="/personnel/:id" element={<PersonnelDetail />} />
-        <Route path="/contact" element={<Contact />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/contact" element={<PrivateRouter />}>
+          <Route path="" element={<Contact />} />
+        </Route>
         <Route path="/paths" element={<Paths />}>
           <Route index element={<Frontend />} />
           {/* <Route path="frontend" element={<Frontend />} /> */}
