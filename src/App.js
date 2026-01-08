@@ -7,6 +7,9 @@ import Footer from "./components/Footer";
 import PersonnelDetail from "./pages/PersonnelDetail";
 
 import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
+import Paths from "./pages/Paths";
+import Frontend from "./components/Frontend";
+import Backend from "./components/Backend";
 
 const App = () => {
   return (
@@ -17,6 +20,11 @@ const App = () => {
         <Route path="/personnel" element={<Personnel />} />
         <Route path="/personnel/:id" element={<PersonnelDetail />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/paths" element={<Paths />}>
+          <Route index element={<Frontend />} />
+          {/* <Route path="frontend" element={<Frontend />} /> */}
+          <Route path="backend" element={<Backend />} />
+        </Route>
         {/* <Route path="*" element={<Navigate to="/" />} /> */}
         <Route path="*" element={<NotFound />} />
       </Routes>
