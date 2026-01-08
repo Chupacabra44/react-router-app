@@ -106,17 +106,6 @@
 .logo {
   width: 75px;
 }
-@media screen and (max-width: 768px) {
-  .logo {
-    display: none;
-  }
-
-  .navigasyonWrapper {
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;
-  }
-}
 
 .personnelWrapper {
   display: flex;
@@ -137,4 +126,29 @@
 .personnelCard {
   width: 30%;
   text-align: center;
+}
+
+.personWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.btnWrapper {
+  display: flex;
+  gap: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .logo {
+    display: none;
+  }
+
+  .navigasyonWrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+  }
 }

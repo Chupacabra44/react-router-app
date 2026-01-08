@@ -26,9 +26,7 @@ const Personnel = () => {
             <div className="personnelCard" key={id}>
               <p>{name}</p>
               <p>{address.city}</p>
-              <button
-                onClick={() => navigate(`/personnel/${id}`, { state: person })}
-              >
+              <button onClick={() => navigate(`/personnel/${id}`)}>
                 Detail
               </button>
             </div>
